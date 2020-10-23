@@ -9,3 +9,9 @@ td {
     width: 10px;
     height: 10px;
 }
+td.dead {
+    background-color: transparent;
+}
+td.alive {
+    background-color: orange;
+}
