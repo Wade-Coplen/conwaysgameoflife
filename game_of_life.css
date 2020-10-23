@@ -1,0 +1,11 @@
+#gameBoard {
+    padding-bottom: 10px;
+}
+table {
+    background-color: white;
+}
+td {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}

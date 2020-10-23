@@ -16,18 +16,18 @@ for(let i = 0; i < ROWS; i++) {
         //create a table row and assign it to tableRow variable
         for(let j = 0; j < COLUMNS; j++) {
             //loop over each column one by one, incrementing by one each time.
-            let cell = document.creatElement('td');
+            let cell = document.createElement('td');
             //create a table data element and assign it to a cell variable
-            tr.appendChild(cell);
+            tableRow.appendChild(cell);
             //append the child element cell to the table row
         }
-        table.appendChild(tr);
+        table.appendChild(tableRow);
         //append the table row child to the parent table
     }  
     world.appendChild(table);
     //appending upwards once again. the table will append the gameBoard or world. 
 }
-window.onLoad=()=> {
-    runWorld()
+window.onload=()=>  {
+    runWorld();
 }
 //onload is an EventHandler that processes load events on a Window and other elements.Fires at the end of a document loading. 
