@@ -16,6 +16,26 @@
         <div id = 'gameBoard'>
 
         </div>
+        <div>
+            <!--I want the start and stop button to be the same. 
+            Also, if production has run its course and no further 
+            evolution is possible, I would like to reset the game board-->
+            <h2>Alive or Dead = Click on cells</h2>
+            <h2>Start Production = Start/Stop</h2>
+
+            <input 
+                type= 'button' 
+                id = 'buttonstartandstop' 
+                value = 'Start the Production!' 
+                onclick='startStop();'
+            />
+            <input 
+                type= 'button' 
+                id = 'buttonreset' 
+                value = 'Reset the Production' 
+                onclick= 'resetWorld();'
+            />
+        </div>
         
         <script src="game_of_life.js" async defer></script>
     </body>
