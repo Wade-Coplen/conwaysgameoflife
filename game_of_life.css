@@ -10,7 +10,7 @@ td {
     height: 10px;
 }
 td.dead {
-    background-color: transparent;
+    background-color: black;
 }
 td.alive {
     background-color: orange;

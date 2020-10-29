@@ -4,7 +4,7 @@
 //speed control
 let start = false // set tru when click starts
 let timer; //evo control
-let evolutionSpeed = 500; // one second per gen
+let evolutionSpeed = 100; // one second per gen
 //Presets
 let rorschach=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -48,8 +48,9 @@ let squareDance=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 //need rows and columns
-const ROWS = 60;
-const COLUMNS = 150;
+const ROWS = 40;
+const COLUMNS = 40
+;
 //double buffer
 let currentGeneration = [ROWS];
 let nextGeneration = [ROWS];
@@ -190,6 +191,7 @@ function neighborsCount(row, col) {
     }
     return count;
 }
+  
     function updateCurrentGeneration() {
         for(row in currentGeneration) {
             for(col in currentGeneration[row]) {
@@ -198,6 +200,7 @@ function neighborsCount(row, col) {
                 currentGeneration[row][col] = nextGeneration[row][col];
                 //set nextGeneration back to empty
                 nextGeneration[row][col] = 0;
+                
             }
         }
     }
@@ -238,15 +241,17 @@ function startStop() {
         clearTimeout(timer);
     }
 }
+function generationCount(){
+  let count = 0;
+  while(evolution) {
+      count = count++
+  }
+
+}
 
 function presetOne() {
     
-    let dance = squareDance;
-    for(row in dance) {
-        for(col in dance[row]) {
-            let presetone = document.getElementById('#presetOne')
-        }
-    }   
+
 
 }
 

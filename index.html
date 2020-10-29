@@ -36,11 +36,17 @@
                 onclick= 'resetWorld();'
             />
             <input 
-            type= 'button' 
-            id = 'presetOne' 
-            value = 'Preset 1' 
-            onclick= 'presetOne();'
-        />
+                type= 'button' 
+                id = 'presetOne' 
+                value = 'Preset 1' 
+                onclick= 'presetOne();'
+            />
+            <input 
+                type = 'text'
+                id = 'generationCount'
+                value = 'Generations'
+                onsubmit= 'generationCount();'
+            />
         </div>
         
         <script src="game_of_life.js" async defer></script>
